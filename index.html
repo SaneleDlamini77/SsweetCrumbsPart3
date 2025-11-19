@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Home — Sweet Crumbs Bakery</title>
+<meta name="description" content="Sweet Crumbs Bakery — handcrafted cakes, pastries and seasonal specials. Order custom cakes, browse our menu and gallery.">
+<meta name="keywords" content="bakery, cakes, pastries, custom cake, bakery near me, Sweet Crumbs">
+<link rel="stylesheet" href="CSS/style.css">
+<link rel="icon" href="images/custom birthday cake.jpg">
+<meta property="og:title" content="Home — Sweet Crumbs Bakery">
+<meta property="og:description" content="Delicious handcrafted baked goods from Sweet Crumbs Bakery.">
+<meta property="og:image" content="images/seasonal specials.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+</head>
+<body>
+<header class="container">
+  <div style="display:flex;justify-content:space-between;align-items:center">
+    <div class="brand">
+      <img src="images/seasonal specials.jpg" alt="Sweet Crumbs logo">
+      <h1>Sweet Crumbs Bakery</h1>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+      <a href="enquiry.html">Enquiry</a>
+      <a href="payment.html">Payment</a>
+    </nav>
+  </div>
+</header>
+<main class="container">
+
+<section class="hero">
+  <div class="lead">
+    <h2>Handcrafted cakes & pastries</h2>
+    <p>Local bakery specializing in custom celebration cakes, trays and daily pastries. Order online or drop by to collect.</p>
+    <p><button class="btn" data-modal-target="#orderModal">Place an Enquiry</button></p>
+  </div>
+  <div class="hero-img"><img src="images/custom birthday cake.jpg" alt="Showcase cake"></div>
+</section>
+<section>
+  <h3>Popular</h3>
+  <div class="grid">
+
+    <article class="card" data-name="Black Forest" data-tags="cake pastry">
+      <img src="images/black forest.jpg" alt="Black Forest">
+      <h3>Black Forest</h3>
+      <p>Delicious Black Forest — order for events or pickup.</p>
+    </article>
+    
+    <article class="card" data-name="Bread Assortment" data-tags="cake pastry">
+      <img src="images/bread assortment.jpg" alt="Bread Assortment">
+      <h3>Bread Assortment</h3>
+      <p>Delicious Bread Assortment — order for events or pickup.</p>
+    </article>
+    
+    <article class="card" data-name="Cakes Slices" data-tags="cake pastry">
+      <img src="images/cakes slices.jpg" alt="Cakes Slices">
+      <h3>Cakes Slices</h3>
+      <p>Delicious Cakes Slices — order for events or pickup.</p>
+    </article>
+    
+    <article class="card" data-name="Carrot Cake" data-tags="cake pastry">
+      <img src="images/carrot cake.jpg" alt="Carrot Cake">
+      <h3>Carrot Cake</h3>
+      <p>Delicious Carrot Cake — order for events or pickup.</p>
+    </article>
+    
+    <article class="card" data-name="Chocolate Fudge Cake" data-tags="cake pastry">
+      <img src="images/chocolate fudge cake.jpg" alt="Chocolate Fudge Cake">
+      <h3>Chocolate Fudge Cake</h3>
+      <p>Delicious Chocolate Fudge Cake — order for events or pickup.</p>
+    </article>
+    
+    <article class="card" data-name="Classic Cheesecake" data-tags="cake pastry">
+      <img src="images/classic cheesecake.jpg" alt="Classic Cheesecake">
+      <h3>Classic Cheesecake</h3>
+      <p>Delicious Classic Cheesecake — order for events or pickup.</p>
+    </article>
+    
+  </div>
+</section>
+<section style="margin-top:18px">
+  <h3>Latest from our bakery</h3>
+  <p id="news">We bake fresh every morning — call to check availability.</p>
+</section>
+
+<!-- Order Modal -->
+<div id="orderModal" class="modal-backdrop">
+  <div class="modal" role="dialog" aria-modal="true">
+    <button class="close" onclick="this.closest('.modal-backdrop').style.display='none'">✕</button>
+    <h3>Send an enquiry / order</h3>
+    <form class="needs-validation" novalidate>
+      <label for="name">Full name *</label>
+      <input id="name" name="name" required>
+      <label for="phone">Phone *</label>
+      <input id="phone" name="phone" required>
+      <label for="details">Order details *</label>
+      <textarea id="details" name="details" rows="4" required></textarea>
+      <div style="margin-top:10px"><button class="btn" type="submit">Send Enquiry</button></div>
+      <div class="form-status" style="margin-top:8px;color:green"></div>
+    </form>
+  </div>
+</div>
+
+</main>
+<footer class="container">
+  <small>&copy; 2025 Sweet Crumbs Bakery — Made with ❤️. <span id="dynamicPromo"></span></small>
+</footer>
+<script src="JS/main.js"></script>
+</body>
+</html>

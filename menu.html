@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Menu — Sweet Crumbs Bakery</title>
+<meta name="description" content="Sweet Crumbs Bakery — handcrafted cakes, pastries and seasonal specials. Order custom cakes, browse our menu and gallery.">
+<meta name="keywords" content="bakery, cakes, pastries, custom cake, bakery near me, Sweet Crumbs">
+<link rel="stylesheet" href="CSS/style.css">
+<link rel="icon" href="images/custom birthday cake.jpg">
+<meta property="og:title" content="Menu — Sweet Crumbs Bakery">
+<meta property="og:description" content="Delicious handcrafted baked goods from Sweet Crumbs Bakery.">
+<meta property="og:image" content="images/seasonal specials.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+</head>
+<body>
+<header class="container">
+  <div style="display:flex;justify-content:space-between;align-items:center">
+    <div class="brand">
+      <img src="images/seasonal specials.jpg" alt="Sweet Crumbs logo">
+      <h1>Sweet Crumbs Bakery</h1>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+      <a href="enquiry.html">Enquiry</a>
+      <a href="payment.html">Payment</a>
+    </nav>
+  </div>
+</header>
+<main class="container">
+
+<h2>Our Menu</h2>
+<div class="searchbar">
+  <input id="menuSearch" placeholder="Search by name or tag (e.g. 'cake', 'cheesecake')">
+  <button class="btn secondary" onclick="document.getElementById('menuSearch').value='';document.getElementById('menuSearch').dispatchEvent(new Event('input'))">Clear</button>
+</div>
+<div class="grid" id="menuGrid">
+
+  <article class="card" data-name="Tiramisu Cake" data-tags="tiramisu,cake,italian">
+    <img src="images/Tiramisu Cake.jpg" alt="Tiramisu Cake">
+    <h3>Tiramisu Cake</h3>
+    <p>Tags: tiramisu,cake,italian</p>
+    <p><button class="btn" data-modal-target="#orderModal">Enquire</button></p>
+  </article>
+
+  <article class="card" data-name="Black Forest" data-tags="black forest,chocolate,cake">
+    <img src="images/black forest.jpg" alt="Black Forest">
+    <h3>Black Forest</h3>
+    <p>Tags: black forest,chocolate,cake</p>
+    <p><button class="btn" data-modal-target="#orderModal">Enquire</button></p>
+  </article>
+
+  <article class="card" data-name="Bread Assortment" data-tags="bread,assortment,tray">
+    <img src="images/bread assortment.jpg" alt="Bread Assortment">
+    <h3>Bread Assortment</h3>
+    <p>Tags: bread,assortment,tray</p>
+    <p><button class="btn" data-modal-target="#orderModal">Enquire</button></p>
+  </article>
+
+  <article class="card" data-name="Cakes Slices" data-tags="slices,cake,small">
+    <img src="images/cakes slices.jpg" alt="Cakes Slices">
+    <h3>Cakes Slices</h3>
+    <p>Tags: slices,cake,small</p>
+    <p><button class="btn" data-modal-target="#orderModal">Enquire</button></p>
+  </article>
+
+  <article class="card" data-name="Carrot Cake" data-tags="carrot,cake,spice">
+    <img src="images/carrot cake.jpg" alt="Carrot Cake">
+    <h3>Carrot Cake</h3>
+    <p>Tags: carrot,cake,spice</p>
+    <p><button class="btn" data-modal-target="#orderModal">Enquire</button></p>
+  </article>
+
+  <article class="card" data-name="Chocolate Fudge Cake" data-tags="chocolate,fudge,cake">
+    <img src="images/chocolate fudge cake.jpg" alt="Chocolate Fudge Cake">
+    <h3>Chocolate Fudge Cake</h3>
+    <p>Tags: chocolate,fudge,cake</p>
+    <p><button class="btn" data-modal-target="#orderModal">Enquire</button></p>
+  </article>
+
+  <article class="card" data-name="Classic Cheesecake" data-tags="cheesecake,cheese">
+    <img src="images/classic cheesecake.jpg" alt="Classic Cheesecake">
+    <h3>Classic Cheesecake</h3>
+    <p>Tags: cheesecake,cheese</p>
+    <p><button class="btn" data-modal-target="#orderModal">Enquire</button></p>
+  </article>
+
+  <article class="card" data-name="Custom Birthday Cake" data-tags="custom,birthday,cake">
+    <img src="images/custom birthday cake.jpg" alt="Custom Birthday Cake">
+    <h3>Custom Birthday Cake</h3>
+    <p>Tags: custom,birthday,cake</p>
+    <p><button class="btn" data-modal-target="#orderModal">Enquire</button></p>
+  </article>
+
+  <article class="card" data-name="Custom Wedding Cake" data-tags="wedding,custom,cake">
+    <img src="images/custom wedding cake.jpg" alt="Custom Wedding Cake">
+    <h3>Custom Wedding Cake</h3>
+    <p>Tags: wedding,custom,cake</p>
+    <p><button class="btn" data-modal-target="#orderModal">Enquire</button></p>
+  </article>
+
+  <article class="card" data-name="Lemon Drizzle" data-tags="lemon,drizzle,cake">
+    <img src="images/lemon drizzle.jpg" alt="Lemon Drizzle">
+    <h3>Lemon Drizzle</h3>
+    <p>Tags: lemon,drizzle,cake</p>
+    <p><button class="btn" data-modal-target="#orderModal">Enquire</button></p>
+  </article>
+
+  <article class="card" data-name="Nutella Hazelnut Cake" data-tags="hazelnut,nutella,cake">
+    <img src="images/nutella hazelnut cake.jpg" alt="Nutella Hazelnut Cake">
+    <h3>Nutella Hazelnut Cake</h3>
+    <p>Tags: hazelnut,nutella,cake</p>
+    <p><button class="btn" data-modal-target="#orderModal">Enquire</button></p>
+  </article>
+
+  <article class="card" data-name="Oreo Cake" data-tags="oreo,cake">
+    <img src="images/oreo cake.jpg" alt="Oreo Cake">
+    <h3>Oreo Cake</h3>
+    <p>Tags: oreo,cake</p>
+    <p><button class="btn" data-modal-target="#orderModal">Enquire</button></p>
+  </article>
+
+  <article class="card" data-name="Pastry Tray" data-tags="tray,pastry">
+    <img src="images/pastry tray.jpg" alt="Pastry Tray">
+    <h3>Pastry Tray</h3>
+    <p>Tags: tray,pastry</p>
+    <p><button class="btn" data-modal-target="#orderModal">Enquire</button></p>
+  </article>
+
+  <article class="card" data-name="Red Velvet Cake" data-tags="red velvet,cake">
+    <img src="images/red velvet cake.jpg" alt="Red Velvet Cake">
+    <h3>Red Velvet Cake</h3>
+    <p>Tags: red velvet,cake</p>
+    <p><button class="btn" data-modal-target="#orderModal">Enquire</button></p>
+  </article>
+
+  <article class="card" data-name="Seasonal Specials" data-tags="seasonal,specials">
+    <img src="images/seasonal specials.jpg" alt="Seasonal Specials">
+    <h3>Seasonal Specials</h3>
+    <p>Tags: seasonal,specials</p>
+    <p><button class="btn" data-modal-target="#orderModal">Enquire</button></p>
+  </article>
+
+  <article class="card" data-name="Vanilla Buttercream" data-tags="vanilla,buttercream,cake">
+    <img src="images/vanilla buttercream.jpg" alt="Vanilla Buttercream">
+    <h3>Vanilla Buttercream</h3>
+    <p>Tags: vanilla,buttercream,cake</p>
+    <p><button class="btn" data-modal-target="#orderModal">Enquire</button></p>
+  </article>
+</div>
+
+<!-- reuse order modal -->
+<div id="orderModal" class="modal-backdrop" style="display:none">
+  <div class="modal" role="dialog" aria-modal="true">
+    <button class="close" onclick="this.closest('.modal-backdrop').style.display='none'">✕</button>
+    <h3>Send an enquiry / order</h3>
+    <form class="needs-validation" novalidate>
+      <label for="item">Item *</label>
+      <input id="item" name="item" required>
+      <label for="name2">Full name *</label>
+      <input id="name2" name="name2" required>
+      <label for="phone2">Phone *</label>
+      <input id="phone2" name="phone2" required>
+      <label for="date">Collect date</label>
+      <input id="date" name="date" type="date">
+      <div style="margin-top:10px"><button class="btn" type="submit">Send Enquiry</button></div>
+      <div class="form-status" style="margin-top:8px;color:green"></div>
+    </form>
+  </div>
+</div>
+
+</main>
+<footer class="container">
+  <small>&copy; 2025 Sweet Crumbs Bakery — Made with ❤️. <span id="dynamicPromo"></span></small>
+</footer>
+<script src="JS/main.js"></script>
+</body>
+</html>
